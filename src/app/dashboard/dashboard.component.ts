@@ -17,7 +17,16 @@ export class DashboardComponent implements OnInit {
   }
 
   getItems(): void {
+    // this gets all the favourite items
     this.itemService.getItems()
-      .subscribe(items => this.items = items.slice(1, 5));
+    // loops through each item and adds it
+    // to the items[] array if it is a favourite
+      .subscribe( (items) => {
+                for (const item of items) {
+          if (item.isFavourite) {
+            this.items.push(item);
+          }
+        }
+      });
   }
 }

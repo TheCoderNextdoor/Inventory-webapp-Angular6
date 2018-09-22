@@ -1,12 +1,17 @@
 <!-- this component displays the item details-->
 <div *ngIf="item">
   <h2>{{item.name | uppercase}} Details</h2>
-  <div >
+  <div>
     <span>id: </span>{{item.id}}
   </div>
   <div>
-    <label>name:
+    <label>Name:
       <input [(ngModel)]="item.name" placeholder="name">
+    </label>
+  </div>
+  <div>
+    <label>Weight:
+      <input [(ngModel)]="item.weight" placeholder="weight">
     </label>
   </div>
 </div>
