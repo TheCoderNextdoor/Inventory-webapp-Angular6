@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { ItemDetailsComponent } from './item-details/item-details.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
     ItemsComponent,
     ItemDetailsComponent,
     MessagesComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
