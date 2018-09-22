@@ -12,7 +12,7 @@ export class ItemsComponent implements OnInit {
   // the array of Item type objects
   items: Item[];
   // selected item by clicking on it
-  selectedItem: Item;
+  // selectedItem: Item;
   constructor(private itemService: ItemService) {}
   ngOnInit() {
     // on initialization get the mock items list
@@ -25,7 +25,7 @@ export class ItemsComponent implements OnInit {
       .subscribe(items => this.items = items);
   }
   // method to register a selected item
-  onSelect(item: Item): void {
-    this.selectedItem = item;
-  }
+  // onSelect(item: Item): void {
+  //   this.selectedItem = item;
+  // }
 }

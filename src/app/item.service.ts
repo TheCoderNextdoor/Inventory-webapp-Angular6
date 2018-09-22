@@ -9,6 +9,10 @@ import { MessageService } from './message.service';
 })
 export class ItemService {
   constructor(private messageService: MessageService) {}
+  getItem(id: number): Observable<Item> {
+    this.messageService.add(`MessageService: fetched Item id: ${id}`);
+    return of(ITEMS.find(item => item.id === id));
+  }
   getItems(): Observable<Item[]> {
     this.messageService.add('MessageService: fetched Items');
     return of(ITEMS);
