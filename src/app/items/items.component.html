@@ -1,0 +1,11 @@
+<!-- for displaying the master inventory -->
+<h2>Items in inventory</h2>
+
+  <ul class="items">
+    <li *ngFor="let item of items" 
+    (click)="onSelect(item)"
+    [class.selected]="item === selectedItem">
+      <span class="badge"> {{item.id}} </span> {{item.name}}
+    </li>
+  </ul>
+<app-item-details [item]="selectedItem"></app-item-details>
