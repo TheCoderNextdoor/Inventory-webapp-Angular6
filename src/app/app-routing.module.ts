@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, Router } from '@angular/router';
 import { ItemsComponent } from './items/items.component';
-import { Item } from './item';
-import { AppComponent } from './app.component';
+// import { Item } from './item';
+// import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ItemDetailsComponent } from './item-details/item-details.component';
 
@@ -19,7 +19,7 @@ const routes: Routes = [
 
 @NgModule({
   exports: [ RouterModule ],
-  // we configure the router at he apps root level
+  // we configure the router at the app's root level
   imports: [RouterModule.forRoot(routes)]
 })
 
