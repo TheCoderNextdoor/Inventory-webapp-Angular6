@@ -1,8 +1,10 @@
 <!-- The double curly braces are Angular's interpolation binding syntax -->
 <h1>{{title}}</h1>
 <nav>
+<!-- links to the dashboard and items view -->
+    <a routerLink="/dashboard">Dashboard</a>
     <a routerLink="/items">Items</a>
 </nav>
-<!-- <app-items></app-items> -->
+<!-- the app items view is shown by <app-items></app-items> -->
 <router-outlet></router-outlet>
 <app-messages></app-messages>
