@@ -1,6 +1,7 @@
 # MyInventoryList
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+Secondary app on which I started learning Angular, not meant for the blog
 
 ## Development server
 
